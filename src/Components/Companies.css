@@ -1,0 +1,9 @@
+.companiesmain{
+    height: 100vh; 
+    /* background-color: rgba(0, 0, 0, 0.829);   */
+}
+.dflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

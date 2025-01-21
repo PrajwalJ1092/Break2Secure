@@ -1,0 +1,10 @@
+.firstpage {
+  /* height: 100vh; */
+  /* background-color: black; */
+  /* background-image: url(https://wallpapers.com/images/hd/cyber-background-mboy3w2gf6c93ram.jpg); */
+}
+
+
+.animate__animated.animate__backInLeft{
+  --animate-duration: 3s;
+}

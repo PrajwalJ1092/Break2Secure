@@ -1,0 +1,43 @@
+.scroller {
+  overflow: hidden;
+  position: relative;
+  max-width: full;
+}
+
+.scroller-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4rem;
+  padding: 2rem;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.scroller[data-direction="right"] .scroller-inner {
+  animation-direction: reverse;
+}
+
+.scroller[data-speed="fast"] .scroller-inner {
+  animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] .scroller-inner {
+  animation-duration: 60s;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.scroller-inner img,
+.scroller-inner li {
+  /* box-shadow: 0 0.5rem 1rem -0.25rem rgba(0, 0, 0, 0.5); */
+  background: rgb(255, 255, 255);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
